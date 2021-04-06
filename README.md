@@ -1,5 +1,8 @@
 # web3eth
 
+Connect with a local or remote node to interact with the Ethereum network and
+call RPC methods in your Ruby or Rails apps.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -195,7 +198,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/web3eth. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/web3eth/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/wbnns/web3eth. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/wbnns/web3eth/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -203,4 +206,10 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Web3eth project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/web3eth/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Web3eth project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/wbnns/web3eth/blob/master/CODE_OF_CONDUCT.md).
+
+## Acknowledgements
+
+This gem would not be possible without the work of **Izetex**. It is entirely
+based on code from his [web3-eth library](https://github.com/izetex/web3-eth),
+which appears to no longer be maintained.
