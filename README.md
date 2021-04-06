@@ -1,4 +1,4 @@
-# web3eth
+# web3ethereum
 
 Connect with a local or remote node to interact with the Ethereum network and
 call RPC methods in your Ruby or Rails apps.
@@ -8,7 +8,7 @@ call RPC methods in your Ruby or Rails apps.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'web3eth'
+gem 'web3ethereum'
 ```
 
 And then execute:
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install web3eth
+    $ gem install web3ethereum
 
 ## Usage
 
@@ -42,7 +42,7 @@ web3 = Web3::Eth::Rpc.new host: 'node.host.com',
 HTTP connection options are from  [Ruby HTTP](https://ruby-doc.org/stdlib-2.4.2/libdoc/net/http/rdoc/Net/HTTP.html)  plus additional optional property
 **rpc_path** - path to RPC interface.
 
-For example, to connect to infura node, you need the following configuration:
+For example, to connect to Infura node, you need the following configuration:
 
 ```ruby
 web3 = Web3::Eth::Rpc.new host: 'mainnet.infura.io',
