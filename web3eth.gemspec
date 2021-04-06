@@ -4,7 +4,7 @@ require_relative "lib/web3/eth/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "web3eth"
-  spec.version       = Web3eth::VERSION
+  spec.version       = Web3::Eth::VERSION
   spec.authors       = ["Will Binns"]
   spec.email         = ["hello@willbinns.org"]
 
