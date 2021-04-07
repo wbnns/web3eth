@@ -2,6 +2,7 @@
 
 require 'digest'
 require 'digest/sha3'
+require 'sha3'
 require 'openssl'
 require 'rlp'
 
@@ -16,11 +17,11 @@ module Web3::Eth::Abi
     # Not the keccak in sha3, although it's underlying lib named SHA3
     #
     def keccak256(x)
-      Digest::SHA3.new(256).digest(x)
+      SHA3::Digest.new(256).digest(x)
     end
 
     def keccak512(x)
-      Digest::SHA3.new(512).digest(x)
+      SHA3::Digest.new(512).digest(x)
     end
 
     def keccak256_rlp(x)
@@ -28,7 +29,7 @@ module Web3::Eth::Abi
     end
 
     def sha256(x)
-      Digest::SHA256.digest x
+      SHA3::Digest.digest x
     end
 
     def double_sha256(x)
