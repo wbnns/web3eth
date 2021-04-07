@@ -1,9 +1,9 @@
 # -*- encoding : ascii-8bit -*-
 
-require 'web3/eth/abi/type'
-require 'web3/eth/abi/constant'
-require 'web3/eth/abi/exceptions'
-require 'web3/eth/abi/utils'
+require 'web3ethereum/abi/type'
+require 'web3ethereum/abi/constant'
+require 'web3ethereum/abi/exceptions'
+require 'web3ethereum/abi/utils'
 
 module Web3::Eth::Abi
 
