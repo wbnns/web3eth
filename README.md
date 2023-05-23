@@ -1,3 +1,7 @@
+# Forked
+
+This was forked from https://github.com/wbnns/web3eth solely to enable Ruby 3 support. The [Keccak](https://github.com/q9f/keccak.rb) gem replaces digest-sha3 to make this possible as mentioned [here](https://github.com/phusion/digest-sha3-ruby/pull/10#issuecomment-931363585).
+
 # web3ethereum
 
 Connect with a local or remote node to interact with the Ethereum network and
@@ -34,9 +38,9 @@ To connect to remote Ethereum node, follow instructions: https://github.com/pari
 If you need to connect to remote host, you can specify host, port and HTTP connection options:
 
 ```ruby
-web3 = Web3::Eth::Rpc.new host: 'node.host.com', 
-                          port: 8545,  
-                          connect_options: { use_ssl: true, read_timeout: 120 } 
+web3 = Web3::Eth::Rpc.new host: 'node.host.com',
+                          port: 8545,
+                          connect_options: { use_ssl: true, read_timeout: 120 }
 ```
 
 HTTP connection options are from  [Ruby HTTP](https://ruby-doc.org/stdlib-2.4.2/libdoc/net/http/rdoc/Net/HTTP.html)  plus additional optional property
@@ -59,8 +63,8 @@ or to connect to Ropsten:
 
 
 ```ruby
-web3 = Web3::Eth::Rpc.new host: 'ropsten.infura.io', 
-                          port: 443,  
+web3 = Web3::Eth::Rpc.new host: 'ropsten.infura.io',
+                          port: 443,
                           connect_options: {
                             open_timeout: 20,
                             read_timeout: 140,
@@ -101,7 +105,7 @@ api = Web3::Eth::Etherscan.new 'Your API Key'
 abi = api.contract_getabi address: '0xe3fedaecd47aa8eab6b23227b0ee56f092c967a9'
 ```
 
-Method name for Etherscan must be constructed as <module>_<action>, for example contract_getabi 
+Method name for Etherscan must be constructed as <module>_<action>, for example contract_getabi
 calls method getabi in module contract
 
 If method accepts only one parameter address, the call can be simplified to:
@@ -121,7 +125,7 @@ myContractInstance = myContract.at('0x2ad180cbaffbc97237f572148fc1b283b68d8861')
 
 # call constant function
 result = myContractInstance.balanceOf('0x...'); # any constant method works
-puts result 
+puts result
 ```
 
 or using Etherscan API ( requires contract ABI be published in Etherescan ):
@@ -180,7 +184,7 @@ myContract.parse_log_args tx_receipt.logs.first
 
 ### Listing internal transactions
 
-To use this feature, you should run parity node with the option 
+To use this feature, you should run parity node with the option
 --tracing on, refer to [https://github.com/paritytech/parity/wiki/Configuring-Parity#cli-options].
 
 ```
